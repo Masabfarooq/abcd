@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Motors</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+    <section id="banner">
+        <img src="IMAGES/Car Images/logo_for_velocity_motors-removebg-preview.png" alt="logo" class="logo">
+        <div class="bannertext">
+            <h1>Car Showroom</h1>
+            <p>
+                Experience Luxury and Performance at Velocity Motors <br>Your Destination for the Finest Cars!
+            </p>
+            <div class="bannerbtn">
+                <a href="#"><span></span> Find Out </a>
+                <a href="#"><span></span> Read More </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Servcies</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="IMAGES/Car Images/menu_button-removebg-preview.png" id="menu">
+    </div>
+    <!--features-->
+    <section id="features">
+        <div class="titletext">
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+            <div class="featurebox">
+                <div class="feature">
+                    <h1>Drive Into Excellence with Velocity Motors</h1>
+                    <div class="featuredesc">
+                        <div class="featuretext">
+                            <p> At Velocity Motors, we bring you the ultimate car buying experience with a wide range of premium vehicles that cater to every taste and lifestyle. Discover your dream car and experience the velocity of perfection at Velocity Motors.</p>
+                        </div>
+                    </div>
+                    <h1>Where Style Meets Performance</h1>
+                    <div class="featuredesc">
+                        <div class="featuretext">
+                            <p> Explore a world of premium cars designed for speed, luxury, and reliability. At Velocity Motors, your dream ride is just a drive away!</p>
+                        </div>
+                    </div>
+                    <h1> Your Journey Begins Here</h1>
+                    <div class="featuredesc">
+                        <div class="featuretext">
+                            <p>Discover top-notch vehicles that combine elegance and power. At Velocity Motors, we redefine your driving experience!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featureimg">
+                    <img src="IMAGES/Car Images/car showroom 02.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--services-->
+
+    <section id="service">
+        <div class="titletext">
+            <p>Servcies</p>
+            <h1>Driven to Serve You</h1>
+        </div>
+        <div class="servicebox">
+            <div class="singleservice">
+                <img src="IMAGES/Car Images/service 01.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedesc">
+                    <h1>Where Luxury Meets Performance</h1>
+                    <hr>
+                    <p> A sleek sports car gleaming under showroom lights, surrounded by an elegant modern interior </p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="IMAGES/Car Images/service 02.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedesc">
+                    <h1>Drive Into Luxury</h1>
+                    <hr>
+                    <p> Discover premium cars displayed in a state-of-the-art showroom, radiating elegance and style. </p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="IMAGES/Car Images/service 03.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedesc">
+                    <h1>Performance Redefined</h1>
+                    <hr>
+                    <p> Experience powerful machines crafted for speed, comfort, and sophistication</p>
+                </div>
+            </div>
+            <div class="singleservice">
+                <img src="IMAGES/Car Images/service 04.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="servicedesc">
+                    <h1>Your Dream Car Awaits</h1>
+                    <hr>
+                    <p>Step into a world of innovation and design, where every detail reflects perfection. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        sidenav.style.right = "-250px";
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "IMAGES/Car Images/closing menu.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "IMAGES/Car Images/menu_button-removebg-preview.png";
+            }
+        }
+    </script>
+</body>
+</html>
